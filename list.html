@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testapp" ng-controller="testCtrl">
+<head>
+  <meta charset="UTF-8">
+  <title>List</title>
+</head>
+<body>
+  <h1>List</h1>
+  <input type="text" id="myInput1" ng-model='input'>
+  <button ng-click="clickButton()">BUTTON</button>
+  <div> List: </div>
+  <ol>     
+     <li ng-repeat="n in list">Item: {{n}}</li>  
+  </ol>
+  
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
+  <script src="list.js"></script>
+</body>
+</html>
