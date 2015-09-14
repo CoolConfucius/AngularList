@@ -7,14 +7,13 @@
 <body>
   <h1>List</h1>
   <input type="text" id="myInput1" ng-model='input'>
-  <button ng-click="clickButton()">BUTTON</button>
+  <input type="text" id="myInput2" ng-model='input'>
+  <button ng-click="clickButton()">Add to List</button>
+  <div> Item is {{input}}</div>
   <div> List: </div>
   <ol>     
-     <li ng-repeat="n in list">Item: {{n}}</li>  
+     <li ng-repeat="n in list track by $index">Item: {{n}}</li>  
   </ol>
-  
-
-
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js"></script>
   <script src="list.js"></script>
